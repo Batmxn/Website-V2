@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles.css">
+    <link rel="icon" type="image/x-icon" href="/src/images/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>Oliver Smith</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <div class="search-icon" onclick="toggleSearchBox()" role="button" aria-label="Search">
+                <img src="/src/images/searchicon.png" alt="Search Icon" width="20" height="20">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="search-overlay" id="search-overlay">
+            <div class="search-box">
+                <input type="text" placeholder="Search here" style="color: white;">
+                <button type="button" onclick="closeSearchBox()">Close</button>
+            </div>
+        </div>
+    
+    <div class="welcome-screen" id="home">
+        <div class="welcome-text">
+            <h1>Hello, I'm Oliver</h1>
+            <p>Welcome to my personal website. Explore and learn more about me.</p>
+        </div>
+    </div>
+
+    <script src="/src/scripts.js"></script>
+</body>
+</html>
